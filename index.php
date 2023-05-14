@@ -5,7 +5,6 @@ require "config.php";
 
 use App\Department;
 use App\Employee;
-require "src\Employee.php";
 
 $depts = Department::list();
 
