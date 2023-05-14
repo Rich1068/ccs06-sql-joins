@@ -21,7 +21,6 @@ class Employee
             (SELECT TIMESTAMPDIFF(YEAR, e.birth_date, CURDATE())) AS age,
             e.gender,
             e.hire_date,
-            (SELECT Max(s.from_date)) AS RECENT_DATE,
             s.salary
             FROM departments AS d
             LEFT JOIN dept_emp AS de
